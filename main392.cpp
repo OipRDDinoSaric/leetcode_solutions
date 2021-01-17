@@ -42,11 +42,6 @@ public:
     bool
     isSubsequence(std::string substring, std::string sourceString)
     {
-        if (substring.empty())
-        {
-            return true;
-        }
-
         constexpr size_t kStartLetterPos = -1;
         bool isSubsequenceVar = true;
         size_t letterPos = kStartLetterPos;
