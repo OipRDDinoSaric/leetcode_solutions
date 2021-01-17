@@ -208,7 +208,7 @@ AllowShortLoopsOnASingleLine: false
 #
 # Example:
 #
-AlwaysBreakAfterReturnType: None
+AlwaysBreakAfterReturnType: All
 
 # Determines whether to put a break before multiline string literals.
 # This would always put multiline strings start into a new line.
@@ -520,7 +520,7 @@ ConstructorInitializerIndentWidth: 8
 
 # Sets the number of characters to use for indentation of line
 # continuations.
-ContinuationIndentWidth: 4
+ContinuationIndentWidth: 0
 
 # Determine whether C++11 style of formatting braced list is used.
 # C++11 style of brace list formatting formats the braced lists exactly

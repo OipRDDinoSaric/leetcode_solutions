@@ -21,7 +21,8 @@ Constraints:
 The number of nodes in the tree is in the range [0, 3 * 104].
 -1000 <= Node.val <= 1000
 
- * @see https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/973312/My-Solution-with-proper-comments-and-reasoning
+ * @see
+https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/973312/My-Solution-with-proper-comments-and-reasoning
  * @see https://www.youtube.com/watch?v=TO5zsKtc1Ic
  */
 
@@ -34,14 +35,11 @@ struct TreeNode
     TreeNode* left;
     TreeNode* right;
     TreeNode() : val(0), left(nullptr), right(nullptr)
-    {
-    }
+    {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr)
-    {
-    }
+    {}
     TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right)
-    {
-    }
+    {}
 };
 
 class Solution
@@ -57,7 +55,7 @@ public:
 int
 main()
 {
-    Solution  solution {};
+    Solution solution {};
     TreeNode leftLeft2(4);
     TreeNode rightRight2(5);
     TreeNode left1(2, &leftLeft2, nullptr);
