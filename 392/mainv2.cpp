@@ -42,26 +42,19 @@ public:
     bool
     isSubsequence(std::string substring, std::string sourceString)
     {
-        if (substring.empty())
-        {
-            return true;
-        }
+        constexpr size_t kStartLetterPos = -1;
+        bool isSubsequenceVar = true;
+        size_t letterPos = kStartLetterPos;
 
-        size_t iSubstring = 0;
-        bool isSubsequenceVar = false;
-
-        for (const auto& letter : sourceString)
+        for(const auto &letter : substring)
         {
-            if (letter == substring[iSubstring])
+            letterPos = sourceString.find(letter, letterPos + 1);
+            if(std::string::npos == letterPos)
             {
-                iSubstring++;
-                if (iSubstring >= substring.length())
-                {
-                    isSubsequenceVar = true;
-                    break;
-                }
+                isSubsequenceVar = false;
             }
         }
+
         return isSubsequenceVar;
     }
 };
