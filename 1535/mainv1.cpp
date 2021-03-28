@@ -58,6 +58,11 @@ public:
     int
     getWinner(std::vector<int>& arr, const int conseqRoundsNeeded)
     {
+        /* This solution is too slow, but it does everything the task requires. Other solution does
+         * not push anything to the end of the vector, and it isn't too slow, and it passes the
+         * tests. I believe this solution is a better one as it does everything the task
+         * requires, even though it is too slow for the tests.
+         */
         const auto arrSize {arr.size()};
         int        conseqRounds = 0;
 

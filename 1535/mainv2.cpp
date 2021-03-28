@@ -58,6 +58,10 @@ public:
     int
     getWinner(std::vector<int>& arr, const int conseqRoundsNeeded)
     {
+        /* Note: Even though this solution doesn't push lower element to the end, it passes the
+         * tests. That concludes that the tests do not check everything, and I am not sure this
+         * solution is valid.
+         */
         const auto arrSize {arr.size()};
         int        conseqRounds {0};
         int        winner {arr[0]};
