@@ -9,7 +9,7 @@ set(CPM_DOWNLOAD_FILE_PATH "${CMAKE_BINARY_DIR}/cmake/CPM_${CPM_DOWNLOAD_VERSION
 
 if (NOT EXISTS ${CPM_DOWNLOAD_FILE_PATH})
     message(STATUS "Installing CPM.")
-    file(DOWNLOAD https://github.com/TheLartians/CPM.cmake/releases/download/v${CPM_DOWNLOAD_VERSION}/CPM.cmake
+    file(DOWNLOAD https://github.com/TheLartians/CPM.cmake/releases/download/${CPM_DOWNLOAD_VERSION}/CPM.cmake
             ${CPM_DOWNLOAD_FILE_PATH})
     message(STATUS "CPM ${CPM_DOWNLOAD_VERSION} installed.")
 endif ()

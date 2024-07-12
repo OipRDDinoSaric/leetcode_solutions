@@ -9,5 +9,10 @@ target_compile_options(LeetCodeSolution PRIVATE
         -Wall -Wextra -Wconversion -Wpedantic -O0 -g3)
 
 set(CPM_DOWNLOAD_VERSION "v0.40.0")
-include (${CMAKE_CURRENT_SOURCE_DIR}/cmake/install_cpm_if_not_available.cmake)
+include(./cmake/install_cpm_if_not_available.cmake)
 unset(CPM_DOWNLOAD_VERSION)
+
+include(./cmake/install_cpm_packages.cmake)
+
+target_link_libraries(LeetCodeSolution PRIVATE
+        fmt::fmt)
