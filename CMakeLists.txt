@@ -3,7 +3,7 @@ project(LeetCodeSolutions)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(LeetCodeSolution 40/mainv1.cpp)
+add_executable(LeetCodeSolution 2144/mainv1.cpp)
 
 target_compile_options(LeetCodeSolution PRIVATE
         -Wall -Wextra -Wconversion -Wpedantic -O0 -g3)
